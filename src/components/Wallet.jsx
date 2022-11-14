@@ -5,8 +5,8 @@ const Wallet = ({ setShowWallet }) => {
   return (
     <div>
         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-[#00000078]">
-            <div className="relative w-auto my-6 mx-auto">
-                <div className="border-0 rounded-lg w-[400px] py-5 mx-auto lg:w-[500px] md:w-[600px] relative flex flex-col bg-white outline-none focus:outline-none">
+            <div className="relative w-full my-6 mx-auto">
+                <div className="border-0 rounded-lg w-[90%] py-5 mx-auto lg:w-[500px] md:w-[600px] relative flex flex-col bg-white outline-none focus:outline-none">
                     <div className="flex px-5 pb-3 items-center justify-between border-b">
                         <p className='font-bold text-lg'>Connect Wallet</p>
                         <p 

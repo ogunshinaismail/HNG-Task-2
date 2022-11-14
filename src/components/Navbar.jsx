@@ -12,21 +12,14 @@ const Navbar = () => {
       <nav className="fixed top-0 w-full flex flex-wrap items-center justify-between py-5 bg-white">
         <div className="container w-11/12 lg:w-11/12 mx-auto flex flex-wrap items-center justify-between">
 
-          <div className="w-full relative flex items-center justify-between lg:w-auto lg:static lg:block lg:justify-start">
+          <div className="w-full relative flex items-center gap-2 justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <NavLink to='/' className="text-sm font-bold leading-relaxed inline-block whitespace-nowrap uppercase">
               <img src={Logo} className='w-44' alt="" />
             </NavLink>
 
-            <div className="flex gap-2 items-center">
-                <button 
-                  className="bg-primary-500 text-white py-2 px-3 lg:px-7 rounded-lg outline-none lg:hidden"
-                  onClick={() => setShowWallet(true)}
-                >
-                  Connect wallet
-                </button> 
-
+            <div className="flex justify-between items-center">
               <button
-                className="text-white cursor-pointer text-xl leading-none px-3 py-1 w-[60px] border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                className="text-white cursor-pointer text-sm lg:text-xl leading-none lg:px-3 py-1 w-[60px] border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
                 type="button"
                 onClick={() => setNavbarOpen(!navbarOpen)}
               >
@@ -63,15 +56,18 @@ const Navbar = () => {
                     <span className="ml-2">Community</span>
                   </a>
                 </li>
+
+                <li className="nav-item">
+                  <button 
+                    className="lg:block bg-primary-500 py-2 px-7 rounded-lg outline-none"
+                    onClick={() => setShowWallet(true)}
+                  >
+                    <span className="text-white">Connect wallet</span>
+                  </button>
+                </li>
               </ul>        
           </div>
 
-          <button 
-            className="hidden lg:block bg-primary-500 py-2 px-7 rounded-lg outline-none"
-            onClick={() => setShowWallet(true)}
-          >
-            <span className="text-white">Connect wallet</span>
-          </button>
 
         </div>
       </nav>
