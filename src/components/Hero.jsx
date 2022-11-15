@@ -12,9 +12,9 @@ const Hero = () => {
                     we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone
                 </p>
 
-                <div className="w-11/12 border h-[43px] rounded-lg z-[-1] relative">
+                <div className="w-full md:w-11/12 border h-[43px] rounded-lg z-[-1] relative">
                     <input className='w-full h-full rounded-l-lg px-2 outline-none' type="text" placeholder='Search for location' />
-                    <button className="bg-primary-500 px-14 text-white text-sm absolute rounded-r-lg right-0 h-full">Search</button>
+                    <button className="bg-primary-500 px-7 md:px-14 text-white text-sm absolute rounded-r-lg right-0 h-full">Search</button>
                 </div>
 
             </div>

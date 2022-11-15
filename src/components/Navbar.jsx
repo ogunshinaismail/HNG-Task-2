@@ -13,17 +13,17 @@ const Navbar = () => {
         <div className="container w-11/12 lg:w-11/12 mx-auto flex flex-wrap items-center justify-between">
 
           <div className="w-full relative flex items-center gap-2 justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <NavLink to='/' className="text-sm font-bold leading-relaxed inline-block whitespace-nowrap uppercase">
+            <NavLink to='/'>
               <img src={Logo} className='w-44' alt="" />
             </NavLink>
 
-            <div className="flex justify-between items-center">
+            <div>
               <button
-                className="text-white cursor-pointer text-sm lg:text-xl leading-none lg:px-3 py-1 w-[60px] border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                className="text-white cursor-pointer text-sm lg:text-xl leading-none lg:px-3 py-1 w-[60px] border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none flex justify-end"
                 type="button"
                 onClick={() => setNavbarOpen(!navbarOpen)}
               >
-                <img src={Hamburger} alt="" />
+                <img src={Hamburger} alt="" className="mr-0" />
               </button>
             </div>
 
