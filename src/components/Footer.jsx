@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <div className='bg-secondary-500 pt-10 pb-4 text-white'>
         <div className="grid lg:grid-cols-4 gap-9 md:grid-cols-2 lg:gap-2 w-11/12 mx-auto">
-            <div className='flex flex-col z-[-1] gap-7 md:w-6/12 md:mx-auto relative'>
+            <div className='flex flex-col gap-7 md:w-6/12 md:mx-auto lg:justify-between'>
                 <img src={LogoWhite} className='w-44' alt="" />
-                <div className="flex items-center gap-6 lg:absolute lg:bottom-4">
+                <div className="flex items-center gap-6 lg:mb-7">
                     <img src={Facebook} alt="" />
                     <img src={Instagram} alt="" />
                     <img src={Twitter} alt="" />
